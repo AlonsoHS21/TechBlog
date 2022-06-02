@@ -1,3 +1,21 @@
-.nav-menu li{
-    text-decoration: none;
+/* El selector * engloba a todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* 
+        Por defecto CSS usa el valor content-box por lo cual nunca vamos a saber la medida real de un elemento para arreglar esto se una el valor 
+        border-box que incluye el padding y el border para porder controlar el ancho de un elemento asi evitamos que nuestro elemento aumente su ta
+        maño mas del especificado.
+    */
+}
+
+body {
+    background-color: black; /* Color de fondo: negro */
+    color: #ffff; /* Color del texto: blanco */
+}
+
+a {
+    color: #ffff;
+    text-decoration: none; /* text-decoration:none establece el formato de texto a sin decoracion tambien existen mas valores */
 }
