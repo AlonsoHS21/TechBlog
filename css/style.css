@@ -84,7 +84,12 @@ ul {
     flex: 1; /* Lo usamos cuando queremos repartir de manera igualitaria el espacion en el contenedor */
     margin-left: 40px; /* Le agrego un margen para que haya un espaciado entre el logo y la navegacion*/
 }
-
+/* Header */ 
+.showcase {
+    width: 90%;
+    height: 500px;
+    background: url(../img/Code.jpg) no-repeat center center/cover;
+}
 /* Contenido */
 h2 {
     text-align: center;
