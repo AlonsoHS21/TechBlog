@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap'); /* Font Oswald importada desde Google Fonts */
+
+/* El selector * engloba a todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* 
+        Por defecto CSS usa el valor content-box por lo cual nunca vamos a saber la medida real de un elemento para arreglar esto se una el valor 
+        border-box que incluye el padding y el border para porder controlar el ancho de un elemento asi evitamos que nuestro elemento aumente su ta
+        maño mas del especificado.
+    */
+}
+
+body {
+    color: black; /* Color del texto Negro */
+    font-family: 'Oswald', sans-serif; /* En caso de no estar disponible la fuente Oswald usara la fuente sans-serif */
+}
+
+a {
+    color: black;
+    text-decoration: none; /* text-decoration:none establece el formato de texto a sin decoracion tambien existen mas valores */
+}
+
+ul {
+    list-style: none; /* El valor none hace que no se muestren ningun marcador de los elementos li 
+    (Se recomienda hacer uso de list-style en ul u ol y no en li)*/
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Submenu */ 
+.nav-main > li{
+    float: left;
+}
+
+.nav-menu li a i{
+    margin: 6px;
+}
+
+.nav-main li ul { 
+    display: none; /* Con display: none hago que los submenus no aparezcan*/ 
+    position: absolute;
+}
+
+.nav-main li:hover > ul {
+    display: block;
+}
+
+/* Estilos Navegacion */
+.nav-main {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between; /* justify-content nos permite alinear elementos con la propiedad flex con space-between le decimos que ocupe todo el espacio disponible */
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-brand {
+    width: 70px; /* Ancho del logo */ 
+    height: 50px; /* Largo del logo */
+}
+
+.nav-main ul {
+    display: flex; 
+}
+
+.nav-main ul li {
+    padding: 15px;
+}
+
+.nav-main ul li a:hover{
+    border-bottom: 3px solid #000;
+}
+
+.nav-main ul.nav-menu {
+    flex: 1; /* Lo usamos cuando queremos repartir de manera igualitaria el espacion en el contenedor */
+    margin-left: 40px; /* Le agrego un margen para que haya un espaciado entre el logo y la navegacion*/
+}
+
+/* Header */ 
+.header {
+    margin-top: 40px;
+    width: 100%; /* El valor 100% para que ocupe todo el espacio a lo ancho disponible */ 
+    height: calc(100vh - 100px);
+    background: url(https://docs.microsoft.com/es-es/azure/api-management/media/visual-studio-code-tutorial/tutorial-api-result.png);
+    background-size: cover;
+}
+
+/* Contenido */
+h2 {
+    text-align: center;
+    margin-top: 25%;
+}
